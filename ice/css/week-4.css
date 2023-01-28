@@ -1,0 +1,45 @@
+:root {
+    --bg-color: pink;
+    --primary-font-color: #000;
+    --secondary-font-color:#fff;
+    --h1-hover-color:#000;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--secondary-font-color);
+    text-align: center;
+}
+
+h1:hover {
+    color: var(--h1-hover-color)
+}
+
+img {
+    max-width: 100%;
+}
+
+blockquote {
+    color: var(--secondary-font-color);
+    text-align: center;
+}
+
+ol {
+    font-weight: bold;
+}
+
+div {
+    text-align: center;
+}
+
+.huge-font {
+    font-size: 34px;
+}
