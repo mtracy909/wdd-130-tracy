@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Solitreo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&family=Roboto&family=Solitreo&display=swap');
 
 :root {
-    --heading-font: "Solitreo";
+    --heading-font: Solitreo, "Dancing Script", Lobster;
     --paragraph-font: Roboto, Helvetica, sans-serif;
 }
 
