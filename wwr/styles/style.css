@@ -73,6 +73,7 @@ header {
     grid-template-columns: 150px auto;
     opacity: .9;
 }
+
 nav {
     display: flex;
     justify-content: space-around;

@@ -17,14 +17,14 @@ Fonts are separated by a & */
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #219ebc;
   /* headlines on a white background */
-  --headline-color-on-color: white;
+  --headline-color-on-color: #023047;
   /* headlines on a colored background */
-  --paragraph-color-on-white: #219ebc;
+  --paragraph-color-on-white: #023047;
   /* paragraph text on a white background */
-  --paragraph-color-on-color: white;
+  --paragraph-color-on-color: #023047;
   /* paragraph text on a colored background */
-  --paragraph-background-color: #219ebc;
-  --nav-link-color: #219ebc;
+  --paragraph-background-color: #8ecae6;
+  --nav-link-color: #023047;
   --nav-background-color: #ffb703;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #023047;
@@ -39,6 +39,7 @@ body {
   padding: 4em;
   font-size: 18px;
   text-align: center;
+  font-family: var(--paragraph-font);
 }
 
 img {
@@ -123,22 +124,22 @@ p.colored {
 }
 
 nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-}
-
-nav {
-  list-style-type: none;
   display: flex;
+  justify-content: space-around;
+  background-color: #ffb703;
+  font-family: var(--heading-font);
 }
 
 nav a {
-  padding: 1em;
-  min-width: 120px;
+  text-align: center;
+  color: #023047;
   text-decoration: none;
-  padding: 10px;
+  padding: 35px;
+}
+
+nav a:hover {
+  background-color: #023047;
+  color: white;
 }
 
 nav a:link,
@@ -154,7 +155,6 @@ nav a:hover {
 .sitemap {
   display: grid;
   justify-content: center;
-
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
   grid-template-areas: ". . home home . ."
@@ -165,6 +165,7 @@ nav a:hover {
 
 .sitemap>div {
   text-align: center;
+  font-family: var(--paragraph-font);
 }
 
 .sm-home {
