@@ -86,6 +86,58 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.homepage-body {
+    font-family: var(--heading-font);
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.xbox-pic, .ps5-pic {
+    grid-row: 1/2;
+    width: 400px;
+    align-self: center;
+    justify-self: center;
+}
+
+.xbox-pic {
+    grid-column: 2/3;
+}
+
+.ps5-pic {
+    grid-column: 3/4;
+    align-content: center;
+}
+
+table {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+th {
+    width: 200px;
+}
+
+tr :nth-child(2) {
+	background-color: var(--nav-background-color);
+	color: white;
+}
+
+tr :nth-child(3) {
+	background-color: var(--header-background-color);
+	color: white;
+}
+
 .xbox-body {
     background-color: var(--paragraph-background-color1);
     color: white;
@@ -109,3 +161,6 @@ img {
     padding: 2em;
 }
 
+.table-summary {
+    padding-bottom: 4em;
+}
